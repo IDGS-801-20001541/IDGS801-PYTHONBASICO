@@ -1,25 +1,23 @@
-class OperasBasic:
-    #1:Propiedades de clase 
+class OperasBas:
+    #propiedades de clases
     n1=0
     n2=0
-    result=0
-    #2:Constructor con parametros (self, a, b) basio (self)
-    def __init__(self,a,b):
+    res=0
+    #constructor de clase
+    def _init_(self, a,b) -> None:
         self.n1 = a
         self.n2 = b
-        
-    #3:Métodos de clase
+
+    #los metodos de clase
     def suma(self):
-       res = self.result=self.n1+self.n2
-   
-
+        self.res=self.n1+self.n2
     def resta(self):
-        self.result=self.n1-self.n2
+        self.res=self.n1-self.n2
 
+def main():
+    obj=OperasBas(3,2)
+    obj.suma()
+    print("La suma es: {}".format(obj.res))
 
-    def main():
-        obj = OperasBasic(3,2)
-        obj.suma()
-
-    if __name__ == '__main__':
-        main()
+if __name__ == "_main_":
+    main()
